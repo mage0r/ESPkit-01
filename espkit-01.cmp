@@ -1,0 +1,101 @@
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 27/02/2015 9:06:12 PM
+
+BeginCmp
+TimeStamp = /54EDDC7D;
+Reference = C2;
+ValeurCmp = 0.1uf;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EDDC99;
+Reference = C3;
+ValeurCmp = 10uf;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EDDD2D;
+Reference = D1;
+ValeurCmp = PWR_LED;
+IdModule  = LED-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EDD60A;
+Reference = IC1;
+ValeurCmp = WS2812B;
+IdModule  = ws2812b;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EEE7FA;
+Reference = P1;
+ValeurCmp = ESP-01;
+IdModule  = ESP-01;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EDD989;
+Reference = P2;
+ValeurCmp = BREAKOUT;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EDD680;
+Reference = P3;
+ValeurCmp = SERIAL;
+IdModule  = PIN_ARRAY-6X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EDDD55;
+Reference = P4;
+ValeurCmp = PWR;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EDDAA2;
+Reference = P5;
+ValeurCmp = NEOPIXEL;
+IdModule  = PIN_ARRAY_4x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EEEF39;
+Reference = P6;
+ValeurCmp = BRIDGE;
+IdModule  = 603_bridge;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EDD918;
+Reference = R1;
+ValeurCmp = 10K;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EDDD11;
+Reference = R3;
+ValeurCmp = 1K;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EDD8EB;
+Reference = SW1;
+ValeurCmp = RESET;
+IdModule  = 1107G;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EDD54C;
+Reference = SW2;
+ValeurCmp = PRGM;
+IdModule  = 1107G;
+EndCmp
+
+EndListe
