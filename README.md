@@ -5,7 +5,9 @@ This project is designed as an easy to use adapter to connect your ESP-01 device
 
 It has a program/general use button and a ws2812b to play with some blinky leds.
 
+![Board Layout](espkit-01.png?raw=true "design")
 
+![Board Layout](espkit-01--brd.png?raw=true "board")
 
 CREDITS
 ------------
