@@ -1,4 +1,4 @@
-(pcb "C:\Users\mage\Dropbox\Arduino\ESP-01-Breakout\ESP-01-Breakout.dsn"
+(pcb "C:\Users\mage\Dropbox\GitHub\ESPkit-01\espkit-01.dsn"
   (parser
     (string_quote ")
     (space_in_quoted_tokens on)
@@ -21,17 +21,17 @@
       )
     )
     (boundary
-      (path pcb 0  36700 -12000  36752.1 -12004.6  36802.6 -12018.1  36850 -12040.2
-            36892.8 -12070.2  36929.8 -12107.2  36959.8 -12150  36981.9 -12197.4
-            36995.4 -12247.9  37000 -12300  37000 -31700  36995.4 -31752.1
-            36981.9 -31802.6  36959.8 -31850  36929.8 -31892.8  36892.8 -31929.8
-            36850 -31959.8  36802.6 -31981.9  36752.1 -31995.4  36700 -32000
-            12300 -32000  12247.9 -31995.4  12197.4 -31981.9  12150 -31959.8
-            12107.2 -31929.8  12070.2 -31892.8  12040.2 -31850  12018.1 -31802.6
-            12004.6 -31752.1  12000 -31700  12000 -12300  12004.6 -12247.9
-            12018.1 -12197.4  12040.2 -12150  12070.2 -12107.2  12107.2 -12070.2
-            12150 -12040.2  12197.4 -12018.1  12247.9 -12004.6  12300 -12000
-            36700 -12000)
+      (path pcb 0  32100 -36800  32095.4 -36852.1  32081.9 -36902.6  32059.8 -36950
+            32029.8 -36992.8  31992.8 -37029.8  31950 -37059.8  31902.6 -37081.9
+            31852.1 -37095.4  31800 -37100  12400 -37100  12347.9 -37095.4
+            12297.4 -37081.9  12250 -37059.8  12207.2 -37029.8  12170.2 -36992.8
+            12140.2 -36950  12118.1 -36902.6  12104.6 -36852.1  12100 -36800
+            12100 -12400  12104.6 -12347.9  12118.1 -12297.4  12140.2 -12250
+            12170.2 -12207.2  12207.2 -12170.2  12250 -12140.2  12297.4 -12118.1
+            12347.9 -12104.6  12400 -12100  31800 -12100  31852.1 -12104.6
+            31902.6 -12118.1  31950 -12140.2  31992.8 -12170.2  32029.8 -12207.2
+            32059.8 -12250  32081.9 -12297.4  32095.4 -12347.9  32100 -12400
+            32100 -36800)
     )
     (via "Via[0-1]_889:635_um" "Via[0-1]_889:0_um")
     (rule
@@ -43,36 +43,36 @@
   )
   (placement
     (component ws2812b
-      (place IC1 19800 -21800 front 270 (PN WS2812B))
+      (place IC1 22300 -19900 front 180 (PN WS2812B))
     )
     (component SM0805
-      (place R1 21300 -13000 front 0 (PN 10K))
-      (place C2 17900 -13000 front 0 (PN 0.1uf))
-      (place C3 14500 -13000 front 180 (PN 10uf))
-      (place R3 18300 -30900 front 0 (PN 1K))
+      (place R1 31100 -21400 front 270 (PN 10K))
+      (place C2 31100 -18000 front 270 (PN 0.1uf))
+      (place C3 31100 -14600 front 90 (PN 10uf))
+      (place R3 13200 -18400 front 270 (PN 1K))
     )
     (component PIN_ARRAY_4x1
-      (place P5 30300 -14100 front 0 (PN NEOPIXEL))
+      (place P5 30000 -30400 front 270 (PN NEOPIXEL))
     )
     (component PIN_ARRAY_2X1
-      (place P2 27400 -29800 front 0 (PN BREAKOUT))
-      (place P4 32800 -29800 front 0 (PN PWR))
+      (place P2 14300 -27500 front 270 (PN BREAKOUT))
+      (place P4 14300 -32900 front 270 (PN PWR))
     )
     (component "PIN_ARRAY-6X1"
-      (place P3 14300 -21900 front 90 (PN SERIAL))
+      (place P3 22200 -14400 front 0 (PN SERIAL))
     )
     (component "LED-0805"
-      (place D1 14700 -31000 front 180 (PN PWR_LED))
+      (place D1 13100 -14800 front 90 (PN PWR_LED))
     )
     (component 1107G
-      (place SW2 19800 -27900 front 180 (PN PRGM))
-      (place SW1 19800 -15800 front 0 (PN RESET))
+      (place SW2 16200 -19900 front 90 (PN PRGM))
+      (place SW1 28300 -19900 front 270 (PN RESET))
     )
     (component "ESP-01"
-      (place P1 28200 -21900 front 90 (PN "ESP-01"))
+      (place P1 22200 -28300 front 0 (PN "ESP-01"))
     )
     (component 603_bridge
-      (place P6 23300 -21700 front 270 (PN PIXEL_OFF))
+      (place P6 22400 -23400 front 180 (PN BRIDGE))
     )
   )
   (library
@@ -215,25 +215,20 @@
       (pin Round[A]Pad_1524_um 8 3810 1270)
     )
     (image 603_bridge
-      (pin Rect[T]Pad_899.16x1000.76_um 1 751.84 0)
-      (pin Rect[T]Pad_899.16x1000.76_um 2 -751.84 0)
-      (pin Rect[T]Pad_600x400_um 3 0 0)
+      (pin Rect[T]Pad_600x800_um 1 350 0)
+      (pin Rect[T]Pad_600x800_um 2 -350 0)
     )
     (padstack Round[A]Pad_1524_um
       (shape (circle F.Cu 1524))
       (shape (circle B.Cu 1524))
       (attach off)
     )
-    (padstack Rect[T]Pad_600x400_um
-      (shape (rect F.Cu -300 -200 300 200))
+    (padstack Rect[T]Pad_600x800_um
+      (shape (rect F.Cu -300 -400 300 400))
       (attach off)
     )
     (padstack Rect[T]Pad_889x1397_um
       (shape (rect F.Cu -444.5 -698.5 444.5 698.5))
-      (attach off)
-    )
-    (padstack Rect[T]Pad_899.16x1000.76_um
-      (shape (rect F.Cu -449.58 -500.38 449.58 500.38))
       (attach off)
     )
     (padstack Rect[T]Pad_1198.88x1198.88_um
@@ -275,15 +270,12 @@
       (pins P2-1 SW2-2 P1-3)
     )
     (net GPIO2
-      (pins P5-3 P2-2 P1-5 P6-2)
+      (pins IC1-4 P5-3 P2-2 P1-5 P6-1 P6-2)
     )
-    (net "N-0000012"
+    (net "N-0000011"
       (pins R1-2 SW1-1 P1-4)
     )
-    (net "N-000004"
-      (pins IC1-4 P6-1)
-    )
-    (net "N-000006"
+    (net "N-000005"
       (pins R3-1 D1-1)
     )
     (net RX
@@ -292,8 +284,8 @@
     (net TX
       (pins P3-4 P1-8)
     )
-    (class kicad_default "" +3.3V GND GPIO0 GPIO2 "N-0000012" "N-000004" "N-000006"
-      RX TX
+    (class kicad_default "" +3.3V GND GPIO0 GPIO2 "N-0000011" "N-000005" RX
+      TX
       (circuit
         (use_via Via[0-1]_889:635_um)
       )

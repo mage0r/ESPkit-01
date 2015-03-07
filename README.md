@@ -5,6 +5,8 @@ This project is designed as an easy to use adapter to connect your ESP-01 device
 
 It has a program/general use button and a ws2812b to play with some blinky leds.
 
+In the "DIY Gerbers" folder I've included a gerber set that should be appropriate for home production.  It is almost entirely on one layer with only 4 connections on the back between different throughole pins (no vias!).
+
 ![Board Layout](espkit-01.png?raw=true "design")
 
 ![Board Layout](espkit-01--brd.png?raw=true "board")
