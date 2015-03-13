@@ -43,36 +43,36 @@
   )
   (placement
     (component ws2812b
-      (place IC1 22300 -19900 front 180 (PN WS2812B))
+      (place IC1 24200 -19500 front 180 (PN WS2812B))
     )
     (component SM0805
-      (place R1 31100 -21400 front 270 (PN 10K))
-      (place C2 31100 -18000 front 270 (PN 0.1uf))
-      (place C3 31100 -14600 front 90 (PN 10uf))
-      (place R3 13200 -18400 front 270 (PN 1K))
+      (place R1 31000 -14200 front 270 (PN 10K))
+      (place C2 18700 -21300 front 0 (PN 0.1uf))
+      (place C3 18700 -19300 front 0 (PN 1uf))
+      (place R3 18700 -17300 front 0 (PN 1K))
     )
     (component PIN_ARRAY_4x1
-      (place P5 30000 -30400 front 270 (PN NEOPIXEL))
+      (place P5 30000 -31700 front 270 (PN NEOPIXEL))
     )
     (component PIN_ARRAY_2X1
-      (place P2 14300 -27500 front 270 (PN BREAKOUT))
-      (place P4 14300 -32900 front 270 (PN PWR))
+      (place P2 14400 -29100 front 90 (PN BREAKOUT))
+      (place P4 14400 -34200 front 270 (PN PWR))
     )
     (component "PIN_ARRAY-6X1"
       (place P3 22200 -14400 front 0 (PN SERIAL))
     )
     (component "LED-0805"
-      (place D1 13100 -14800 front 90 (PN PWR_LED))
-    )
-    (component 1107G
-      (place SW2 16200 -19900 front 90 (PN PRGM))
-      (place SW1 28300 -19900 front 270 (PN RESET))
+      (place D1 13500 -13900 front 90 (PN PWR_LED))
     )
     (component "ESP-01"
-      (place P1 22200 -28300 front 0 (PN "ESP-01"))
+      (place P1 22300 -27400 front 0 (PN "ESP-01"))
     )
     (component 603_bridge
-      (place P6 22400 -23400 front 180 (PN BRIDGE))
+      (place P6 24100 -22900 front 180 (PN BRIDGE))
+    )
+    (component 1107G
+      (place SW2 14100 -20400 front 90 (PN PRGM))
+      (place SW1 30100 -20400 front 90 (PN RESET))
     )
   )
   (library
@@ -192,14 +192,6 @@
       (pin Rect[T]Pad_1198.88x1198.88_um 1 -1049.02 0)
       (pin Rect[T]Pad_1198.88x1198.88_um 2 1049.02 0)
     )
-    (image 1107G
-      (outline (path signal 150  -3700 1700  3700 1700))
-      (outline (path signal 150  3700 1700  3700 -1700))
-      (outline (path signal 150  3700 -1700  -3700 -1700))
-      (outline (path signal 150  -3700 -1700  -3700 1700))
-      (pin Rect[T]Pad_1524x2540_um 1 2540 0)
-      (pin Rect[T]Pad_1524x2540_um 2 -2540 0)
-    )
     (image "ESP-01"
       (outline (path signal 304.8  -5080 2540  5080 2540))
       (outline (path signal 304.8  5080 2540  5080 -2540))
@@ -217,6 +209,14 @@
     (image 603_bridge
       (pin Rect[T]Pad_600x800_um 1 350 0)
       (pin Rect[T]Pad_600x800_um 2 -350 0)
+    )
+    (image 1107G
+      (outline (path signal 150  -4200 1700  4200 1700))
+      (outline (path signal 150  4200 1700  4200 -1700))
+      (outline (path signal 150  4200 -1700  -4200 -1700))
+      (outline (path signal 150  -4200 -1700  -4200 1700))
+      (pin Rect[T]Pad_1524x2540_um 1 3300 0)
+      (pin Rect[T]Pad_1524x2540_um 2 -3300 0)
     )
     (padstack Round[A]Pad_1524_um
       (shape (circle F.Cu 1524))
@@ -261,31 +261,34 @@
   )
   (network
     (net +3.3V
-      (pins IC1-1 R1-1 C2-2 C3-2 R3-2 P5-2 P4-1 P3-3 P1-2 P1-6)
+      (pins IC1-1 R1-1 C2-2 C3-2 R3-2 P5-2 P3-3 P1-2 P1-6 P4-2)
     )
     (net GND
-      (pins IC1-3 C2-1 C3-1 P5-1 P5-4 P4-2 P3-1 D1-2 SW2-1 SW1-2 P1-7)
+      (pins IC1-3 C2-1 C3-1 P5-1 P5-4 P3-1 D1-2 P1-7 P4-1 SW2-1 SW1-2)
     )
     (net GPIO0
-      (pins P2-1 SW2-2 P1-3)
+      (pins P2-1 P1-3 SW2-2)
     )
     (net GPIO2
-      (pins IC1-4 P5-3 P2-2 P1-5 P6-1 P6-2)
+      (pins P5-3 P2-2 P1-5 P6-2)
     )
-    (net "N-0000011"
-      (pins R1-2 SW1-1 P1-4)
+    (net "N-0000012"
+      (pins R1-2 P1-4 SW1-1)
     )
-    (net "N-000005"
+    (net "N-000004"
+      (pins IC1-4 P6-1)
+    )
+    (net "N-000006"
       (pins R3-1 D1-1)
     )
     (net RX
-      (pins P3-5 P1-1)
+      (pins P3-5 P1-8)
     )
     (net TX
-      (pins P3-4 P1-8)
+      (pins P3-4 P1-1)
     )
-    (class kicad_default "" +3.3V GND GPIO0 GPIO2 "N-0000011" "N-000005" RX
-      TX
+    (class kicad_default "" +3.3V GND GPIO0 GPIO2 "N-0000012" "N-000004" "N-000006"
+      RX TX
       (circuit
         (use_via Via[0-1]_889:635_um)
       )
