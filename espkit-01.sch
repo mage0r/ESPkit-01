@@ -37,7 +37,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "13 mar 2015"
+Date "29 may 2015"
 Rev ""
 Comp ""
 Comment1 ""
@@ -53,6 +53,7 @@ F 0 "SW2" H 2600 1760 50  0000 C CNN
 F 1 "PRGM" H 2450 1570 50  0000 C CNN
 F 2 "~" H 2450 1650 60  0000 C CNN
 F 3 "~" H 2450 1650 60  0000 C CNN
+F 4 "0.06" H 2450 1650 60  0001 C CNN "Cost per unit (quantity 100)"
 	1    2450 1650
 	1    0    0    -1  
 $EndComp
@@ -64,6 +65,7 @@ F 0 "IC1" H 1100 1800 60  0000 C CNN
 F 1 "WS2812B" H 1100 2200 60  0000 C CNN
 F 2 "~" H 1100 2000 60  0000 C CNN
 F 3 "~" H 1100 2000 60  0000 C CNN
+F 4 "0.08" H 1100 2000 60  0001 C CNN "Cost per unit (quantity 100)"
 	1    1100 2000
 	1    0    0    -1  
 $EndComp
@@ -177,6 +179,7 @@ F 0 "SW1" H 3000 1260 50  0000 C CNN
 F 1 "RESET" H 2850 1070 50  0000 C CNN
 F 2 "~" H 2850 1150 60  0000 C CNN
 F 3 "~" H 2850 1150 60  0000 C CNN
+F 4 "0.06" H 2850 1150 60  0001 C CNN "Cost per unit (quantity 100)"
 	1    2850 1150
 	1    0    0    -1  
 $EndComp
@@ -365,50 +368,6 @@ Wire Wire Line
 Connection ~ 4200 1850
 Connection ~ 3800 1850
 $Comp
-L +3.3V #PWR5
-U 1 1 54EDDD05
-P 1550 700
-F 0 "#PWR5" H 1550 660 30  0001 C CNN
-F 1 "+3.3V" H 1550 810 30  0000 C CNN
-F 2 "" H 1550 700 60  0000 C CNN
-F 3 "" H 1550 700 60  0000 C CNN
-	1    1550 700 
-	0    1    1    0   
-$EndComp
-$Comp
-L GND #PWR1
-U 1 1 54EDDD0B
-P 650 700
-F 0 "#PWR1" H 650 700 30  0001 C CNN
-F 1 "GND" H 650 630 30  0001 C CNN
-F 2 "" H 650 700 60  0000 C CNN
-F 3 "" H 650 700 60  0000 C CNN
-	1    650  700 
-	0    1    1    0   
-$EndComp
-$Comp
-L R R3
-U 1 1 54EDDD11
-P 1300 700
-F 0 "R3" V 1380 700 40  0000 C CNN
-F 1 "1K" V 1307 701 40  0000 C CNN
-F 2 "~" V 1230 700 30  0000 C CNN
-F 3 "~" H 1300 700 30  0000 C CNN
-	1    1300 700 
-	0    -1   -1   0   
-$EndComp
-$Comp
-L LED D1
-U 1 1 54EDDD2D
-P 850 700
-F 0 "D1" H 850 800 50  0000 C CNN
-F 1 "PWR_LED" H 850 600 50  0000 C CNN
-F 2 "~" H 850 700 60  0000 C CNN
-F 3 "~" H 850 700 60  0000 C CNN
-	1    850  700 
-	-1   0    0    1   
-$EndComp
-$Comp
 L CONN_2 P4
 U 1 1 54EDDD55
 P 2050 2450
@@ -449,6 +408,7 @@ F 0 "P1" H 1900 1450 50  0000 C CNN
 F 1 "ESP-01" V 1900 1200 40  0000 C CNN
 F 2 "" H 1900 1200 60  0000 C CNN
 F 3 "" H 1900 1200 60  0000 C CNN
+F 4 "0.05" H 1900 1200 60  0001 C CNN "Cost per unit (quantity 100)"
 	1    1900 1200
 	1    0    0    -1  
 $EndComp
