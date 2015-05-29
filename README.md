@@ -3,7 +3,7 @@ ESPkit-01 - The breakout board for learning ESP-01's
 
 This project is designed as an easy to use adapter to connect your ESP-01 device to a standard serial connection.
 
-It has a program/general use button and a ws2812b to play with some blinky leds.
+It has a program/general use button and a ws2812b to play with some blinky leds.  To enable the ws2812b, simply bridge the "pixel on" pads.
 
 Don't forget to jump on to Andy's github and do the workshop! https://github.com/geekscape/nodemcu_esp8266
 
