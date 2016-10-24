@@ -3,13 +3,18 @@ ESPkit-01 - The breakout board for learning ESP-01's
 
 This project is designed as an easy to use adapter to connect your ESP-01 device to a standard serial connection.
 
+Version 1.3 has expanded and now includes a full usb-to-serial chip right on the board.  If you'd prefer the simpiler version, follow this link to [Version 1.2](https://github.com/mage0r/ESPkit-01/tree/v1.2).
+
 It has a program/general use button and a ws2812b to play with some blinky leds.  To enable the ws2812b, simply bridge the "pixel on" pads.
 
 Don't forget to jump on to Andy's github and do the workshop! https://github.com/geekscape/nodemcu_esp8266
 
-![Board Layout](espkit-01.png?raw=true "design")
+[Schematic available here](espkit-01.pdf?raw=true "Schematic")
 
-![Board Layout](espkit-01--brd.png?raw=true "board")
+[Gerber](http://gerblook.org/pcb/zZLnKLdKDrQhMTAEMa8F2Y)
+
+![Board Layout](espkit-01-brd.png?raw=true "board")
+
 
 CREDITS
 ------------
@@ -38,4 +43,4 @@ LICENSE
 Licensed under the TAPR Open Hardware License (www.tapr.org/OHL).
 The "license" sub-folder also contains a copy of this license in plain text format.
 
-Copyright John Spencer, Andy Gelme 2015
+Copyright John Spencer, Andy Gelme 2016

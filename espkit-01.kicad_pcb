@@ -3,7 +3,7 @@
   (general
     (links 63)
     (no_connects 0)
-    (area 11.79138 10.403249 54.89256 47.850001)
+    (area 11.79138 10.433729 32.29672 47.850001)
     (thickness 1.6)
     (drawings 29)
     (tracks 231)
@@ -82,7 +82,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory Gerber.x2/))
+      (outputdirectory ""))
   )
 
   (net 0 "")
@@ -1002,8 +1002,8 @@
   (gr_line (start 31.8 47.8) (end 12.4 47.8) (angle 90) (layer Edge.Cuts) (width 0.1))
   (gr_arc (start 31.8 47.5) (end 32.1 47.5) (angle 90) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 32.1 12.4) (end 32.1 47.5) (angle 90) (layer Edge.Cuts) (width 0.1))
-  (gr_arc (start 14.7 31.6) (end 15.8 30.5) (angle 90) (layer B.SilkS) (width 0.2))
-  (gr_text "Bridge for PRGM" (at 16.8 31.9 90) (layer B.SilkS)
+  (gr_arc (start 14.5095 42.41024) (end 15.6095 41.31024) (angle 90) (layer B.SilkS) (width 0.2))
+  (gr_text "Bridge for PRGM" (at 16.68018 42.48912 90) (layer B.SilkS)
     (effects (font (size 0.5 0.5) (thickness 0.125)) (justify mirror))
   )
   (gr_text GND (at 12.68382 43.56038 270) (layer B.SilkS) (tstamp 54EF0A3D)
